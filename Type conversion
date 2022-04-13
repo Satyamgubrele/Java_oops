@@ -1,0 +1,15 @@
+package com.company;
+import java.util.Scanner;
+public class Typeconversion {
+    public static void main(String args[])
+    {
+        int x=4;
+        float y=x; //widening conversion #NO ERROR
+        System.out.println(y);
+
+    float a=3.4f;
+    // int b=a;generate error
+        int b=(int)a;
+        System.out.println(b);
+    }
+}
