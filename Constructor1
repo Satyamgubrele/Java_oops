@@ -1,0 +1,46 @@
+
+
+
+class Constructor1{
+	int a;
+	int b;
+	Constructor1()
+	{
+		
+	}
+	Constructor1(int x,int y)
+	{
+		a=x;
+		b=y;
+		
+	}
+	Constructor1(Constructor1 O)
+	{
+		O.a=a;
+		O.b=b;
+		
+	}
+	void display()
+	{
+		System.out.println("a="+a+"b="+b);
+	}
+}
+
+
+public class constructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Constructor1 c1=new Constructor1();
+		Constructor1 c2=new Constructor1(15,20);
+		Constructor1 c3=new Constructor1(c2);
+		
+		c1.display();
+		System.out.println(" ");
+		c2.display();
+		c3.display();
+		
+		
+	}
+
+}
