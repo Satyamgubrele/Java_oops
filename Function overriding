@@ -1,0 +1,53 @@
+
+class A
+{
+	int x,y;
+	void show()
+	{
+		System.out.println("parent class method is call");
+	}
+	A()
+	{
+		x=10;y=20;
+	}
+	void showValue()
+	{
+		System.out.println("x"+x+"y"+y);
+	}
+}
+class B extends A
+{
+	int z;
+	B()
+	{
+	z=30;
+	}
+	void show(String s)
+	{
+		System.out.println("child class "+s);
+	}
+	void showValue()
+	{
+		System.out.println("z "+z);
+	}
+}
+public class DemoOverride {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+B b1=new B();
+A a1=new A();
+A obj;
+a1.show();
+a1.showValue();
+b1.show();
+b1.showValue();
+obj=a1;
+obj.show();
+obj.showValue();
+obj=b1;
+obj.show();
+obj.showValue();
+	}
+
+}
