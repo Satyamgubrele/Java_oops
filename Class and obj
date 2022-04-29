@@ -1,0 +1,22 @@
+package com.company;
+    class Demo{
+       int a=10;
+       int b=45;
+
+}
+public class ClassAndObj {
+    int a=20;
+    public static void main(String[] args) {
+        int a=14;
+
+       ClassAndObj x;
+         x=new ClassAndObj();
+//       ClassAndObj x=new ClassAndObj();
+        System.out.println(x.a);
+//        ClassAndObj s=new ClassAndObj();
+        System.out.println(a);
+        Demo d=new Demo();
+        System.out.println(d.a + "" +d.b);
+
+    }
+}
