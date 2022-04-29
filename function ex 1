@@ -1,0 +1,51 @@
+package com.company;
+
+import java.util.Scanner;
+
+class Abc{
+    int sum(int x,int y)
+    {
+       int sum=x+y;
+       return sum;
+
+    }
+    void conditional(int a,int b,int c){
+           if((a>b)&&(a>c))
+        {
+            System.out.println("A is grater");
+        }
+            else if((b>a)&&(b>c))
+            {
+            System.out.println("B is grater");
+
+            }
+            else{
+            System.out.println("C is grater");
+        }
+
+
+    }
+    void fun()
+    {
+        System.out.println("hello guys");
+    }
+}
+public class FunctionExample {
+
+
+    public static void main(String[] args) {
+//        int a,b,c,k;
+//        Scanner sc=new Scanner(System.in);
+//        a=sc.nextInt();
+//        b=sc.nextInt();
+//        c=sc.nextInt();
+   Abc o= new Abc();
+//    o.fun();
+//    k=o.sum(a,b);
+//
+//
+//        System.out.println(k);
+        o.conditional(10,78,89);
+    }
+
+}
