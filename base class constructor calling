@@ -1,0 +1,29 @@
+class parent{
+	int a,b;
+	parent(){
+		a=10;
+		b=20;
+		System.out.println("value of a"+a);
+		System.out.println("value of a"+a);
+
+		
+	}
+	
+	
+}
+ class subclass extends parent {
+	int x,y;
+subclass(){
+	x=160;
+	y=100;
+		System.out.println("value of x"+x);
+		System.out.println("value of y"+y);
+	
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		subclass sc=new subclass();
+
+	}
+
+}
