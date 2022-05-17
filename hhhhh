@@ -1,0 +1,34 @@
+package exceptionalHandling;
+class Abc{
+    int a;
+    int b;
+    Abc(){
+        a=b=0;
+    }
+    Abc(int a,int b){
+        this.a=a;
+        this.b=b;
+
+    }
+    void fun() {
+        try {
+            int c = a / b;
+            System.out.println("runtime error occure");
+        } catch (ArithmeticException o) {
+            System.out.println(o);
+        }
+
+
+
+        }
+        }
+
+
+
+
+public class Exc {
+    public static void main(String[] args) {
+        Abc obj=new Abc(10,0);
+        obj.fun();
+    }
+}
