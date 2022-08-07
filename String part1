@@ -1,0 +1,38 @@
+package dh;
+import java.util.*;
+public class St {
+    public static void main(String [] args) {
+            String fname="satyam";
+            String lname="gubrele";
+            String fullname="satyam" +" "+ "gubrele";
+            System.out.println(fullname);
+            System.out.println(fname + lname);
+            //length function
+            System.out.println(fullname.length());
+        //substring function
+            String substrinngg=fullname.substring(0,5);
+            System.out.println(substrinngg);
+            //for printing evry elemnt in string "CharAt"
+        for(int i=0;i<fullname.length();i++){
+            System.out.println(fullname.charAt(i));
+        }
+       // CompareTo function
+       //System.out.println(fname.compareTo(fullname));
+        System.out.println(fullname.toLowerCase());
+        System.out.println(fullname.toUpperCase());
+
+
+
+////        String s[] = new String[5];
+////        Scanner sc = new Scanner(System.in);
+//////        for(int i=0;i<s.length;i++){
+////            s=sc.nextLine();
+////        }
+////        for(int i=0;i<s.length;i++) {
+//
+//            System.out.println(s);
+////        }
+
+
+    }
+}
